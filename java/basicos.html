@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso de javaScrip</title>
+</head>
+<body>
+    <h1>fundamentos de javascript</h1>
+    <script>
+        // var hola="hola mundo";
+        // console.log(hola);
+        //*******************clase 2 conts******************************
+        // let a;
+        // const PI=3.1416;
+        // console.log(PI);
+        // a="mau"
+        // console.log(a);
+        // console.log("******************");
+
+        // const objeto={
+        //     nombre: "mau",
+        //     edad:20
+        // }
+        // const colores=["blanco","rojo","azul"]
+
+        // console.log(objeto);
+        // console.log(colores);
+        // console.log("******************");
+        // objeto.correo="mcm@gmail.com";
+        // colores.push("amarillo");
+        
+        // console.log(objeto);
+        // console.log(colores);
+        //cadena de texto 
+        // let nombre = "MAURICIO";
+        // let apellido = 'chavez';
+        // let saludo = new String("hola mundo");
+        // let lorem = "         se pueden poner comillas simles o dobles es telatiivamente lo mismola manera mas formal de declarar una cadena strig con su contructor"
+
+        // console.log(nombre,apellido,saludo);
+        
+        // console.log(
+        // nombre.length,
+        // apellido.length,
+        // saludo.length,
+        // nombre.toLowerCase(),
+        // apellido.toUpperCase(),
+        // lorem.includes("poner"),
+        // lorem,
+        // lorem.trim(),
+        // lorem.split(" "), 
+        // );
+        /////************cadenas tipo de datos Strings ****************
+
+
+        // let nombre = "mau";
+        // let apellido = "Chavez";
+        // let saludo = "hola  mi nombre es " + nombre + " " + apellido + ".";
+        // console.log(saludo);
+
+        // let saludo2 = `hola mi nombre es ${nombre} ${apellido}. `;
+        // console.log(saludo2);
+        
+        
+        // let ul = "<ul><li></li><li></li><li></li><li></li></ul>";
+        // console.log(ul);
+
+        // let ul2 =`
+        // <ul>
+        // <li></li>
+        // <li></li>
+        // <li></li>
+        // <li></li>
+        // </ul>
+        // `;
+        // console.log(ul2);
+
+        // let ul3 = "<ul>";
+        // ul3+="<li>primera</li>";
+        // ul3+="<li>Verano</li>";
+        // ul3+="<li></li>";
+        // ul3+="<li></li>";
+        // ul3 +="<li></li>";
+
+        // console.log(ul3);
+
+        //******************tipos de datos number ************************
+
+
+        // let a = 2;
+        // let b = new Number(1);
+        // let c =7.19;
+        // let d="5.6";
+
+        // console .log(a, b);
+
+        // console.log(c.toFixed(1));
+        // console.log(c.toFixed(5));
+        // console.log(parseInt(c));
+        // console.log(parseFloat(c));
+        // console.log(typeof c, typeof d);
+        // console.log(a+b);
+        // console.log(c + parseInt(d)); //el parseInt son metodos de JavaScrip que cambian ek tipo de la bariable de cadena de texto a numerico
+        // console.log(c + parseFloat(d));//el parseFloat son metodos de JavaScrip que cambian ek tipo de la bariable de cadena de texto a numerico
+        // console.log(c + Number.parseInt(d)); //estos metodos dependen del contructor numerico por lo que no es nesesario poner Number.paseInt y que lo reconose en automatico sualquier de las dosformas ers correcta de escrivir
+        // console.log(c + Number.parseFloat(d));
+        //*****************tipo de datos boleanos **********************
+        // // let verdadero =true;
+        // let falso = false;
+
+        // let v=Boolean(true);
+        // let f=Boolean(false);
+
+        // console.log(typeof verdadero, typeof falso, v, f);    
+
+        //******************* tipos de valores: undefile , null-**********************
+
+        // let indefinida;
+        // console.log(indefinida);
+
+        // let nulo=null;
+        // console.log(nulo);
+
+        // let noEsUnNumero ="hola" * 3.7;
+        // console.log(noEsUnNumero);
+
+        // termino de valores primitivos
+
+        //*****************funciones***********
+
+        // //funcion declarada
+        // function estoEsUnaFuncion(){
+        //     console.log("uno");
+        //     console.log("dos");
+        //     console.log("tres");
+        //     console.log("cuatro");
+        //     console.log("cinco");
+        //     return "La funcion ha retornado una cadena de texto";
+        // }
+        // //let valorDeFuncion = estoEsUnaFuncion();
+        // //console.log(valorDeFuncion);
+        // //INVOCACION DE FUNCION
+        // // estoEsUnaFuncion();
+        // function saludar(nombre="brandon", edad=7){
+        //     console.log(`hola mi nombre es ${nombre} y tengo ${edad} años`);
+        // }
+        // // saludar ("kenai",7);
+        // // saludar ();
+        // // funciones declaradas VS funciones expresadas
+
+
+        // function funciondeclarada(){
+        //     console.log(`esto es una funcion declarada puede 
+        //     invocarse en cualquier parte de
+        //     del codigo incluso antes de que la funcion sea declarada`);
+        // }
+        // funciondeclarada();
+        
+
+        // //funcion anomima
+        // // en esta parte se asicna la funcion a la variable
+        // const funcionexpresada = function(){
+        //     console.log("esto es una funcion expresada es decir, una fiuncion que se le ha asignado como valor a una variable, se invocamos esta funcion antes su definicion JS nos dira 'Uncaught ReferenceError: Cannot access 'funcionexpresada' before initialization'");
+        // }
+
+        // funcionexpresada();
+
+        /////*********************arreglos-*-************
+        // const a = [];
+        // const b = [1, true, "hola" , ["A","B","C"]];
+        
+        // console.log(a);
+        // console.log(b);
+        // console.log(b.length);
+        // console.log(b[3][2]);
+
+        // const c =Array.of("A","Y","Z",7,8,9);
+        // console.log(c);
+
+        // const d =Array(100).fill(false);
+        // console.log(d);
+
+        // const e =new Array();
+        // console.log(e);
+        // const f = new Array(1,2,3, true, false);
+        // console.log(f);
+        // const colores =[ "Rojo","Verde","Azul"];
+        // console.log(colores);
+        // colores.push("Negro");
+        // console.log(colores);
+        // colores.pop();
+        // console.log(colores);
+        // colores.forEach(function (el, index){
+        // console.log(`<li id="${index}"> ${el}</li>`);
+        //      }
+        //       );
+
+        // const b = {}
+        // console.log(b);
+
+        // const c = new Object();
+        // console.log(c);
+
+        // const mau = {
+        //     nombre: "Mauricio",
+        //     apellido: "Chavez",
+        //     edad:"21",
+        //     pasatiempos: ["1","2","3"],
+        //     soltero: true,
+
+        //     contacto: {
+        //         email:"mau12chavezmeji@hotmail.com",
+        //         faceboock:"Mauricio Chavez Mejia",
+        //         movil: "5539081281"
+        //     },
+
+        //     saludar:function(){
+        //         console.log(`hola :)`)
+        //     }
+
+        // }
+
+        /* console.log(mau);
+        console.log(mau["apellido"]);
+        console.log(mau.nombre);
+        mau.saludar();
+
+        OPERAdores
+        aritmeticos + - * / % ()  */
+         
+
+              
+        
+
+    </script>
+    <!-- <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

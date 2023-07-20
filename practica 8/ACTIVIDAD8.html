@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML> <!--Cuando escribimos nuestro documento HTML, lo primero
+que tenemos que escribir es el doctype. El doctype es la declaración de tipo de
+documento. En otras palabras, el doctype nos sirve para indicar que nuestro
+documento está escrito siguiendo la estructura determinada por un DTD concreto.-->
+<html> <!-- HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.  -->
+<head> <!--  provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos. -->
+<meta charset="utf-8"> <!-- El elemento meta con atributo charset en un documento HTML está destinado a indicar la codificación de caracteres utilizados (charset). -->
+<title>Jquery Mobile</title><!--se inclulle el titulo de la paguina web-->
+
+<link href="jquery.mobilecss.min.css" rel="stylesheet"><!--se hace referencia a un archive necesario para la función de algunas partes del código  -->
+<script src="jquery.js"></script> <!--  La función es un bloque de código JavaScript que contiene instrucciones que necesita el plugin para ejecutarse.-->
+<script src="jquery.mobile.min.js"></script> <!-- La función es un bloque de código JavaScript que contiene instrucciones que necesita el plugin para ejecutarse. -->
+</head> <!--cerramos el bloque que provee información general (metadatos) acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.  -->
+<body> ><!--es el contenedor para todos los aspectos representables de un documento. Este es el lugar donde los autores arrojan todos los elementos y contenidos que sus visitantes alcanzarán -->
+	<div data-role="page" data-theme="b" id="pagina1"> <!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+		<div data-role="header" data-theme="e"> <!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        	<h1>Página Interna</h1> <!-- etiquetas para titulo-->
+        </div><!-- cerramos etiqueta div-->
+        <div data-role="content"> <!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+         	
+            <a href="#pagina2" data-role="button" data-transition="slidedown"><!-- s una etiqueta que nos ayuda a poder crear un enlace a una página web. El atributo principal de la etiqueta HTML es href, donde pondremos el enlace al que queremos conectar. Otro atributo muy usado es target, el cual nos sirve para indicar si el enlace se abrirá en una nueva ventana o en la misma. -->        
+            JQUERY</a><!-- cerramos etiqueta  -->             
+
+            <a href="#pagina3" data-role="button" data-transition="pop"> <!-- s una etiqueta que nos ayuda a poder crear un enlace a una página web. El atributo principal de la etiqueta HTML es href, donde pondremos el enlace al que queremos conectar. Otro atributo muy usado es target, el cual nos sirve para indicar si el enlace se abrirá en una nueva ventana o en la misma. -->            
+             JQUERY MOBILE,</a><!-- cerramos etiqueta  -->       
+            
+             <a href="#pagina4" data-role="button" data-transition="fade"><!-- s una etiqueta que nos ayuda a poder crear un enlace a una página web. El atributo principal de la etiqueta HTML es href, donde pondremos el enlace al que queremos conectar. Otro atributo muy usado es target, el cual nos sirve para indicar si el enlace se abrirá en una nueva ventana o en la misma. -->             
+            JQUERY UI,</a><!-- cerramos etiqueta  -->              
+
+             <a href="#pagina5" data-role="button" data-transition="flip"><!-- s una etiqueta que nos ayuda a poder crear un enlace a una página web. El atributo principal de la etiqueta HTML es href, donde pondremos el enlace al que queremos conectar. Otro atributo muy usado es target, el cual nos sirve para indicar si el enlace se abrirá en una nueva ventana o en la misma. --> 
+            Bootstrap</a><!-- cerramos etiqueta  -->  
+
+        </div>         <!-- cerramos etiqueta  -->
+        <div data-role="footer" data-theme="b"> <!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        	<h4>M.en.TI Fernando Lima</h4><!-- etiqueta pára titulo  -->     
+        </div><!-- cerramos etiqueta  -->
+    </div><!-- cerramos etiqueta  -->
+    	<div data-role="page" data-theme="b" id="pagina2" data-add-back-btn="true"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+		<div data-role="header" data-theme="e"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        	<h1>JQUERY</h1><!-- etiqueta pára titulo  -->
+        </div><!-- cerramos etiqueta  -->
+        <div data-role="content"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        	<p>es una biblioteca de JavaScript que simplifica la forma de desarrollar aplicaciones web. Las aplicaciones que utilizan jQuery suelen necesitar menos tiempo y menos código que las aplicaciones hechas con JS puro. Por este motivo, jQuery es muy popular y se utiliza en montones de páginas web.</p><!-- cerramos etiqueta   -->
+            <p>  
+                Sin embargo, no hay que olvidar que la base de jQuery es JavaScript, por lo que es necesario conocer los fundamentes del lenguaje para utilizar esta biblioteca.
+ 
+                jQuery permite manipular elementos del DOM (textos, imágenes, enlaces, etc.) , cambiar el diseño CSS o realizar peticiones Ajax utilizando instrucciones simples, a través de un código muy conciso y sencillo.
+
+                ¿Por qué no utilizar simplemente JavaScript?
+                Es posible realizar el mismo trabajo utilizando solamente JavaScript, sin la biblioteca jQuery, pero la razón principal por la que mucha gente prefiere jQuery es que es mucho menos verboso. Se puede hacer lo mismo con muchas menos líneas de código, esa es la clave de su éxito.
+
+            </p><!-- cerramos etiqueta   -->
+            <p><a href="#pagina1" data-rel="back">Volver</a>
+        </div>  <!-- cerramos etiqueta   -->      
+        <div data-role="footer" data-theme="b"> <!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        	<h4>M.en.TI Fernando Lima</h4> <!-- etiqueta pára titulo  -->    
+        </div><!-- cerramos etiqueta   -->
+    </div>  <!-- cerramos etiqueta   -->
+    <div data-role="page" data-theme="b" id="pagina3" data-add-back-btn="true"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        <div data-role="header" data-theme="e">
+            <h1>JQUERY MOBILE</h1><!-- etiqueta de titulo   -->
+        </div><!-- cerramos etiqueta   -->
+        <div data-role="content"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+            <p>Si eres un programador (o aspirante a) es muy probable que hayas escuchado hablar de jQuery (que es una biblioteca de JavaScript – lenguaje de programación-, es decir, algo que ayuda en la forma que el lenguaje de programación interactúa con ciertos objetos web). jQuery es el framework de JavaScript más utilizado en la web, pero esto no resolvía el problema actual, que trata sobre los dispositivos desde donde se visualizan las páginas web poseen distintas dimensiones y por ende, necesitan adaptar esa web a todas las dimensiones posibles. Y para esto existe jQuery Mobile, que se trata de un plugin de jQuery (por lo cual es necesario tener jQuery previamente instalado para utilizarlo), que te ayuda a optimizar las funciones nativas para mejorar su performance en equipos móviles, y además, modifica el código HTML para acelerar la velocidad de producción.
+
+            Y como todo software, tiene sus beneficios y desventajas el utilizarlo, y entre sus ventajas podemos mencionar que posee una sintaxis sencilla, permite un rápido desarrollo de interfaces y posee efectos prediseñados que te ayudarán a diseñar más rápido; mientras que entre sus desventajas podemos destacar el hecho que agrega peso extra a la aplicación, algunos efectos no funcionan a la perfección en equipos de gama baja, tendrás menos control del código, y hace más complejo el manejo de CSS.
+
+             Para empezar a utilizarlo, debes primero descargar e instalar jQuery y después instalar jQuery Mobile, y claramente también deberás aprender a programar, pero no te preocupes, gracias a Zenva Lounge puedes aprender aquí de forma muy fácil y barata.</p>
+            <p><a href="#pagina1" data-rel="back">Volver</a>
+        </div> <!-- cerramos etiqueta   -->       
+        <div data-role="footer" data-theme="b"> <!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+            <h4>M.en.TI Fernando Lima</h4>  <!-- etiqueta pára titulo  -->   
+        </div><!-- cerramos etiqueta   -->
+    </div>  <!-- cerramos etiqueta   -->  
+    <div data-role="page" data-theme="b" id="pagina4" data-add-back-btn="true"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        <div data-role="header" data-theme="e"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+            <h1>JQUERY UI</h1><!-- etiqueta de titulo  -->  
+        </div><!-- cerramos etiqueta de texto   -->  
+        <div data-role="content"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+            <p>jQuery UI es una biblioteca de componentes para el framework jQuery que le añaden un conjunto de plug-ins, widgets y efectos visuales para la creación de aplicaciones web. Cada componente o módulo se desarrolla de acuerdo a la filosofía de jQuery5​ (find something, manipulate it: encuentra algo, manipúlalo)</p> <!-- cerramos etiqueta de texto   -->  
+            <p>
+                Interacciones
+Añade comportamientos complejos a los elementos:
+
+Draggable: Hace al elemento arrastrable.
+Droppable: Permite que el elemento responda a elementos arrastrables.
+Resizable: Permite redimensionar el elemento.
+Selectable: Permite seleccionar entre una lista de elementos.
+Sortable: Ordena una lista de elementos.
+Sizeable: Permite seleccionar el tamaño de los elementos.
+Widgets
+Es un conjunto completo de controles UI. Cada control tiene un conjunto de opciones configurables y se les pueden aplicar estilos CSS.
+
+Accordion: Menú con efecto acordeón.
+Autocomplete: Caja con autocompletado.
+Button: Botón.
+Dialog: Ventanas con contenido.
+Slider: Elemento para elegir en un rango de valores.
+Tabs: Pestañas.
+Datepicker: Calendario gráfico.
+Progressbar: Barra de progreso.
+Efectos
+Una API para añadir transiciones animadas y facilidades para interacciones.
+
+Core: Amplía los efectos de jQuery incluyendo morphing, requerido por el resto de efectos.
+Blind
+Bounce
+Clip
+Drop
+Explode
+Fade
+Fold
+Highlight
+Pulsate
+Scale
+Shake
+Slide
+Transfer
+ashgahs</p><!-- cerramos etiqueta de texto   -->  
+            <p><a href="#pagina1" data-rel="back">Volver</a><!-- cerramos etiqueta de texto   -->  
+        </div>     <!-- cerramos etiqueta  -->     
+        <div data-role="footer" data-theme="b"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades --> 
+            <h4>M.en.TI Fernando Lima</h4> <!-- etiqueta pára titulo  -->    
+        </div><!-- cerramos etiqueta  -->  
+    </div> <!-- cerramos etiqueta  -->  
+    <div data-role="page" data-theme="b" id="pagina5" data-add-back-btn="true"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+        <div data-role="header" data-theme="e"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+            <h1>Bootstrap</h1><!--etiqueta para el titulo  -->  
+        </div><!-- cerramos etiqueta  -->  
+        <div data-role="content"><!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+            <p>Bootstrap, es un framework originalmente creado por Twitter, que permite crear interfaces web con CSS y JavaScript, cuya particularidad es la de adaptar la interfaz del sitio web al tamaño del dispositivo en que se visualice. Es decir, el sitio web se adapta automáticamente al tamaño de una PC, una Tablet u otro dispositivo. Esta técnica de diseño y desarrollo se conoce como “responsive design” o diseño adaptativo.
+
+El beneficio de usar responsive design en un sitio web, es principalmente que el sitio web se adapta automáticamente al dispositivo desde donde se acceda. Lo que se usa con más frecuencia, y que a mi opinión personal me gusta más, es el uso de media queries, que es un módulo de CSS3 que permite la representación de contenido para adaptarse a condiciones como la resolución de la pantalla y si trabajás las dimensiones de tu contenido en porcentajes, puedes tener una web muy fluida capaz de adaptarse a casi cualquier tamaño de forma automática.
+
+Pero si no quieres nada que ver con los media queries, otra muy buena opción es el uso del framework de Bootstrap, que como te dije te ayudará a desarrollar tus sitios adaptativos.</p><!-- etiqueta de texto -->  
+            <p><a href="#pagina1" data-rel="back">Volver</a>
+        </div><!-- cerramos etiqueta  -->          
+        <div data-role="footer" data-theme="b"> <!-- Sirve para crear secciones o agrupar contenidos al qeu le pude asicnar un identificador clase o estilo de ccs y alineaciones de texto, estilos y demas propiedades -->
+            <h4>M.en.TI Fernando Lima</h4>  <!-- etiqwueta de titulo  -->     
+        </div><!-- cerramos etiqueta  -->  
+    </div> <!-- cerramos etiqueta  -->   
+</body><!-- cerramos etiqueta  -->  
+</html><!-- cerramos etiqueta  -->  

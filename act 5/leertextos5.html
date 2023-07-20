@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+	        var x=$("#boton1");
+	        x.click(leer);
+	        x=$("#boton2");
+	        x.click(escribir);
+			}
+
+			function leer(){
+				var x=$("p");
+				alert(x.text());
+			}
+
+			function escribir(){
+				var x=$("p");
+x.before("Para ser precisos, este conjunto de relatos desde su origen a una etapa anterior a la ocupación de la península griega, razón por la cual se puede encontrar un cierto paralelismo con otras mitologías que son de origen indoeuropeo. En cuanto a este conjunto de relatos, en realidad no constituyen una religión en sí misma, pero sí son una muestra de cómo se constituyó la cosmogonía por las creencias de los antiguos griegos en relación con el universo y el hombre."); //text, before, append, prepend,after 
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" id="boton1" value="Leer Texto">
+		<input type="button" id="boton2" value="Escribir texto">
+		<p>Este es el el texto antiguo (asi lo dejas o colocas el titulo)</p>
+	</body>
+</html>
+
+<!---Aqui solo va el texto donde te dije y al presionar el boton de escribir arroja tu texto que hayas puesto
+si lo presionas muchas veces se pone varias veces wuacha y cuando le das en leer, lee el texto de aqui y ya-->

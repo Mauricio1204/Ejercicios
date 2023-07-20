@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x=$("#mostrar");
+				x.click(muestrame);
+				
+			}
+			function muestrame(){
+				var x=$("#objetivo");
+				x.slideToggle("slow");
+			}
+		</script>
+		<style type="text/css">
+			#objetivo{
+				width:200px;
+				height:400px;
+				background-color:yellow;
+				border:1px solid black; }
+		</style>
+	</head>
+	<body>
+		<input type="button" id="mostrar" value="ocultar">
+		<div id="objetivo">Informacion
+
+			Contaminación
+
+La contaminación ambiental o polución es la introducción de sustancias u otros elementos físicos en un medio, que provocan que este sea inseguro o no apto para su uso.​ El medio ambiente puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química o energía.
+La contaminación consiste en la introducción de sustancias o elementos físicos en un medio que provocan que no sea apto o seguro. El contaminante puede ser una sustancia química, la luz o el calor y el medio puede ser un ecosistema o un ser vivo.
+
+		</div>
+	</body>
+</html>

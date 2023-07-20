@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x=$("#boton1");
+				x.click(asociarClase);
+				x=$("#boton2");
+				x.click(disociarClase);
+			}
+			function asociarClase(){
+				var x=$("#articulo");
+				x.addClass("noticia");
+			}
+			function disociarClase(){
+				var x=$("#articulo");
+				x.removeClass("noticia");
+			}
+		</script>
+		<style type="text/css">
+			.noticia{
+				width:500px;
+				height:500px;
+				border:1px solid black;
+				font-family:Arial;
+				font-height:10px;
+				color:white;
+				background-color:rgb(61,83,194);
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="boton1" value="Asociar clase">
+		<input type="button" id="boton2" value="Disociar clase">
+		<div id="articulo">
+	Violencia de género
+La violencia de género es un tipo de violencia física o psicológica ejercida contra cualquier persona o grupo de personas sobre la base de su orientación o identidad sexual, sexo o género​​​​​ que impacta de manera negativa en su identidad y bienestar social, físico, psicológico o económico.​​
+[4:30 a. m., 26/2/2021] Dulceutfv: Entre los ejemplos de violencia de género que afectan a las mujeres y las niñas en todo su ciclo vital cabe destacar: el aborto selectivo por razones de género, las diferencias en el acceso a la alimentación y los servicios, la explotación y el abuso sexual, el matrimonio infantil, mutilación/ablación genital femenina
+		</div>
+	</body>
+</html>
